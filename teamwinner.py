@@ -3,6 +3,14 @@ import pandas as pd
 import joblib
 import random
 
+st.set_page_config(
+    page_title="Criket Match Winner",
+    page_icon="🏆"  # Use the emoji directly
+)
+
+# Rest of your Streamlit app code
+
+
 # Load the trained Decision Tree and Random Forest models and column transformer
 dt_model = joblib.load('best_decision_tree_model.pkl')
 rf_model = joblib.load('best_rf_model_compressed.joblib')  # Load the Random Forest model
